@@ -25,7 +25,7 @@ pipeline {
            steps {
                script {
                    // Run Snyk test
-                   withCredentials([string(credentialsId: 'your-snyk-api-token', variable: 'SNYK_TOKEN')]) {
+                   withCredentials([string(credentialsId: '3e0a6f09-e772-422c-b3d6-01858b546d9a', variable: 'SNYK_TOKEN')]) {
                        sh 'snyk test --token=$SNYK_TOKEN'
                    }
                }
